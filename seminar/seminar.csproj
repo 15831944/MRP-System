@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3F498272-BA7B-4601-AA56-09BA5C6F8D37}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>seminar</RootNamespace>
+    <AssemblyName>seminar</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.4.9.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.9\lib\Net45\HtmlAgilityPack.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ImagedComboBox">
+      <HintPath>bin\Release\ImagedComboBox.exe</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ListBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListBoxEx.Designer.cs">
+      <DependentUpon>ListBoxEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Predict.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Predict.Designer.cs">
+      <DependentUpon>Predict.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaleSlip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaleSlip.Designer.cs">
+      <DependentUpon>SaleSlip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storage.Designer.cs">
+      <DependentUpon>Storage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MouldSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MouldSelect.Designer.cs">
+      <DependentUpon>MouldSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="plan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="plan.Designer.cs">
+      <DependentUpon>plan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="produce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="produce.Designer.cs">
+      <DependentUpon>produce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductSelect.Designer.cs">
+      <DependentUpon>ProductSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production.Designer.cs">
+      <DependentUpon>Production.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachineSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MachineSelect.Designer.cs">
+      <DependentUpon>MachineSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Machine .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Machine .Designer.cs">
+      <DependentUpon>Machine .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mould.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mould.Designer.cs">
+      <DependentUpon>Mould.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="exchangeRate.cs" />
+    <Compile Include="OrderSlip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderSlip.Designer.cs">
+      <DependentUpon>OrderSlip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Receipts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receipts.Designer.cs">
+      <DependentUpon>Receipts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderSelect.Designer.cs">
+      <DependentUpon>OrderSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewOrder.Designer.cs">
+      <DependentUpon>ViewOrder.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Predict.resx">
+      <DependentUpon>Predict.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaleSlip.resx">
+      <DependentUpon>SaleSlip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage.resx">
+      <DependentUpon>Storage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MouldSelect.resx">
+      <DependentUpon>MouldSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="plan.resx">
+      <DependentUpon>plan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="produce.resx">
+      <DependentUpon>produce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductSelect.resx">
+      <DependentUpon>ProductSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production.resx">
+      <DependentUpon>Production.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachineSelect.resx">
+      <DependentUpon>MachineSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Machine .resx">
+      <DependentUpon>Machine .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mould.resx">
+      <DependentUpon>Mould.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderSlip.resx">
+      <DependentUpon>OrderSlip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Receipts.resx">
+      <DependentUpon>Receipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderSelect.resx">
+      <DependentUpon>OrderSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewOrder.resx">
+      <DependentUpon>ViewOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
